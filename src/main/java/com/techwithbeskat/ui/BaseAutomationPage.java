@@ -12,6 +12,8 @@ import java.time.Duration;
 
 public class BaseAutomationPage {
 
+    protected static final By acceptAll = By.xpath("//*[@id='yDmH0d']/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/form[2]/div/div/button");
+
     @Value("${test.default.wait.seconds}")
     protected int defaultWaitTimeSeconds;
 

@@ -12,6 +12,7 @@ public class YouTubeSteps extends BaseAutomationPage {
     @When("I go to page {string}")
     public void iGoToPage(String pageUrl) {
         getDriver().get(pageUrl);
+        getDriver().findElement(acceptAll).click();
     }
 
     @Then("I verify YouTube channel name {string}")
